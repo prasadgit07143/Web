@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div class="content switch">
+        <div class="heading">
+          <h1 class="text">Temperature Converter</h1>
+        </div>
+        <div class="inputs">
+          <div class="celsius inp">
+            <label class="text" for="c">Celsius (&deg;C) : </label>
+            <input onchange="fromC()" value="0" id="c" type="number" />
+          </div>
+          <div class="kelvin inp">
+            <label class="text" for="k">Kelvin (K) : </label>
+            <input onchange="fromK()" value="273" id="k" type="number" />
+          </div>
+          <div class="fahren inp">
+            <label class="text" for="f">Fahrenheit (&deg;F) : </label>
+            <input onchange="fromF()" value="32" id="f" type="number" />
+          </div>
+          <div class="slider">
+            <div onclick="move()" id="switch" class="slider-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
